@@ -1,0 +1,49 @@
+{
+  "name": "@cnpm/dynamic-list-load",
+  "version": "0.0.9",
+  "description": "动态列表加载",
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "publish": "npm run build",
+    "jenkins": "jenkins dynamic-list-load/dist fp",
+    "rsync": "rsync -to fphtml/dynamic-list-load/dist/",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "keywords": [
+    "dynamic-list-load"
+  ],
+  "author": "liuying",
+  "license": "ISC",
+  "repository": {
+    "type": "svn",
+    "url": "http://svn.chinaso365.com/svn/wljsb/f_fe/fp/dynamic-list-load"
+  },
+  "dependencies": {
+    "@buss/image-cut-url": "^1.0.1",
+    "@cnpm/computation-time": "^1.1.0",
+    "@cnpm/data-process": "^0.0.5",
+    "@cnpm/image-lazyload": "^0.0.1",
+    "@cnpm/utils": "1.3.1",
+    "@third/vue": "^0.0.1",
+    "axios": "^0.18.0",
+    "vue-jsonp": "^0.1.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@cnpm/rsync": "0.0.4",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-airbnb": "^3.0.4",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-import": "^1.9.1",
+    "postcss-px2rem": "^0.3.0",
+    "stylelint-config-standard": "^18.2.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
